@@ -1,25 +1,10 @@
-.App-header {
-  background-color: #282c34;
-  min-height: 10vh;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  color: white;
-}
-
-.App-header img {
-  height: 5rem;
-  width: 5rem;
-  margin-left: 1rem;
-}
-
 .App-body {
   background-color: ivory;
   min-height: 90vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   color: #282c34;
+}
+
+.App-body h2 {
+  padding: 1rem;
 }

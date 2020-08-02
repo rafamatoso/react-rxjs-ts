@@ -1,19 +1,14 @@
 import React from 'react';
-import logo from './assets/logo.svg';
+import { Header } from './components/Header';
 
 import './App.css';
 
 const App: React.FC = () => {
   return (
     <div>
-      <header className="App-header">
-        <h1>
-          React + TypeScript + RxJS
-        </h1>
-        <img src={logo} alt="App logo"></img>
-      </header>
+      <Header />
       <body className="App-body">
-        <p>Aqui ficará o conteúdo</p>
+        <h2>Aqui ficará o conteúdo</h2>
       </body>
     </div>
   );

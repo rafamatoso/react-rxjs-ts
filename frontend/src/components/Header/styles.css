@@ -1,0 +1,15 @@
+.header-container {
+  background-color: #282c34;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.header-container img {
+  height: 25px;
+  width: 25px;
+  padding: 0 10px;
+}
