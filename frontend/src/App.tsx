@@ -1,5 +1,6 @@
 import React from 'react';
 import { Header } from './components/Header';
+import { Body } from './components/Body';
 
 import './App.css';
 
@@ -7,9 +8,7 @@ const App: React.FC = () => {
   return (
     <div>
       <Header />
-      <body className="App-body">
-        <h2>Aqui ficará o conteúdo</h2>
-      </body>
+      <Body />
     </div>
   );
 };

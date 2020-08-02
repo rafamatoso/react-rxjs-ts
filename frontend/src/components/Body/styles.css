@@ -1,0 +1,11 @@
+.App-body {
+  background-color: ivory;
+  min-height: 90vh;
+  display: flex;
+  color: #282c34;
+}
+
+li {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
