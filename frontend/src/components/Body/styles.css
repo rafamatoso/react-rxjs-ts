@@ -59,6 +59,7 @@ button:disabled {
 
 ol {
   width: 460px;
+  transition: 5s ease-in-out;
 }
 
 li {

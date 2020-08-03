@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
+import { Subject } from 'rxjs';
 import './styles.css';
 
 interface ListProps {
   items: string[];
 }
+
+const inputStream = new Subject();
 
 export const Body: React.FC = () => {
   const [name, setName] = useState('');
@@ -16,9 +19,7 @@ export const Body: React.FC = () => {
     e.currentTarget.reset();
   };
 
-  const handleInput = (e: any): void => {
-    setName(e.target.value);
-  };
+  inputStream.subscribe((val: any) => setName(val));
 
   const handleRemoveName = (): void => {
     const auxNames = [...names];
@@ -30,7 +31,11 @@ export const Body: React.FC = () => {
     <div className="App-body">
       <h2>Digite um Nome</h2>
       <form onSubmit={(e) => handleSubmit(e)}>
-        <input type="text" name="name" onChange={(e) => handleInput(e)} />
+        <input
+          type="text"
+          name="name"
+          onChange={(e) => inputStream.next(e.target.value)}
+        />
         <button className="adicionar" type="submit" disabled={name === ''}>
           Adicionar
         </button>
