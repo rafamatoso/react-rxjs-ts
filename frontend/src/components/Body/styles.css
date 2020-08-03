@@ -34,9 +34,17 @@ button {
   font-size: 24px;
   color: white;
   border-radius: 4px;
+  transition: 0.5s ease-in-out;
+}
+
+.adicionar {
   background-color: #007acc;
   border-color: #007acc;
-  transition: 0.5s ease-in-out;
+}
+
+.remover {
+  background-color: red;
+  border-color: red;
 }
 
 button:hover {
